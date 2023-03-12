@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(96, 84, 167);
+    position: relative;
+    overflow: hidden;
+}
+.content {
+    background-color: rgb(121, 114, 165);
+    margin: auto;
+    padding-top: 100px;
+    width: 1000px;
+    border-radius: 0 0 25px 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.header {
+    margin: auto;
+    width: 800px;
+    padding-bottom: 30px;
+    font-size: 45px;
+}
+
+.bayans {
+    margin: auto;
+    width: 800px;
+    font-size: 30px;
+    color: rgba(0, 0, 255, 0.438);
+}
+
+.bayans:last-child {
+    padding-bottom: 100px;
+}
+
+.bayans:hover  .bayan {
+    color: #000;
+}
+
+.bayans:hover  .bayan-cross{
+    visibility: visible;
+
+}
+
+/* .bayan {
+    
+} */
+
+.bayan:hover  .bayan-cross {
+    transform: rotate(45deg);
+}
+
+.bayan:hover .bayan-img {
+    height: 385px;
+    width: 385px;
+}
+
+.bayan-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-top: 3px solid rgb(96, 84, 167);
+}
+
+.bayan-cross {
+    width: 30px;
+    height: 30px;
+    transition: all 300ms;
+    visibility: hidden;
+}
+
+.bayan-img {
+    padding-bottom: 20px;
+    height: 0px;
+    width: 0px;
+    transition: all 550ms;
+}
+
+@media screen and (max-width: 820px) {
+    .content {
+        width: 600px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .content {
+        width: 300px;
+    }
+    .bayan:hover .bayan-img {
+        height: 200px;
+        width: 200px;
+    }
+}
